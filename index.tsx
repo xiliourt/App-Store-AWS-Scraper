@@ -75,7 +75,7 @@ const App = () => {
       const baseUrl = (import.meta as any).env?.VITE_LAMBDA_URL;
       
       if (!baseUrl) {
-        throw new Error("Configuration Error: VITE_LAMBDA_URL environment variable is not defined. Please check .env.local");
+        throw new Error("Configuration Error: VITE_LAMBDA_URL environment variable is not defined. Please check environment variables");
       }
 
       const lambdaUrl = `${baseUrl}?appId=${encodeURIComponent(appId)}`;
