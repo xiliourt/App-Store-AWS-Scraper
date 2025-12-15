@@ -1,0 +1,11 @@
+# Files
+- Scraper.zip - The Lambda code, including node modules (ready for direct zip upload).
+  - Configure ~3GB of RAM so it has 2CPUs
+  - Configure an endpoint in Configuration > Function URL
+
+- Rest of files
+  - Vite frontend deployment. 
+  - Clone the repo, remove Scraper.zip, and deploy to Vercel / Cloudflare pages / etc
+  - Set VITE_LAMBDA_URL environment variable to your Lambda function URL with the trailing / at the end.
+ 
+Enter app id as just the id, ie https://apps.apple.com/us/app/google-gemini/id6477489729 = 6477489729
