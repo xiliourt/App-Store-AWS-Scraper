@@ -72,8 +72,6 @@ const App = () => {
     setSelectedProduct("");
 
     try {
-      // Fix: Safely access environment variable supporting both Vite and process.env
-      // Using optional chaining on meta.env prevents "Cannot read properties of undefined"
       const baseUrl = (import.meta as any).env?.VITE_LAMBDA_URL;
       
       if (!baseUrl) {
