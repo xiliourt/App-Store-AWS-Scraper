@@ -1,5 +1,7 @@
 Scrapes iOS pricing data and converts currency. Scraping is done via a lambda function so it's all one call. Note this uses ~30s @ 3GB of RAM. I recommend not enabling billing.
 
+In theory this could be an app route, but Vercel (and I assume Cloudflare) limit that to 50 URL calls. I'll make a version for that which pages things when I can be bothered, as Vercel caches these calls automatically then.
+
 # Files
 - Scraper.zip - The Lambda code, including node modules (ready for direct zip upload).
   - Configure ~3GB of RAM so it has 2CPUs
