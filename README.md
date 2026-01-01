@@ -12,4 +12,4 @@ Once deployed with Vercel, follow instructions to deploy the Lambda Function and
 ### Requirements
 - Requires an AWS account (free tier works with plenty for personal use)
   - Recommended to use a single-use card for setup (the $0 payment will destroy the card, so no billing is enabled)
-- Requires a Vercel account (hobby (free) plan works)
+- Requires a Vercel account (hobby (free) plan works), or use the example link (it's live and works)
