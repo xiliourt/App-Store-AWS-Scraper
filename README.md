@@ -1,5 +1,6 @@
 ## Apple App Store Price Scraper - Lambda Edition
 - Uses a lambda function to scrape every app store country prices (top ~10 products available only)
+  - Limited by what the website displays - there's no public API for this. 
 
 ## Deployment
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fxiliourt%2FApp-Store-AWS-Scraper)
