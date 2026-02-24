@@ -97,10 +97,7 @@ const App = () => {
     setSelectedProduct("");
 
     try {
-      const baseUrl = effectiveLambdaUrl.endsWith("/")
-        ? effectiveLambdaUrl
-        : `${effectiveLambdaUrl}/`;
-      const lambdaUrl = `${baseUrl}?appId=${encodeURIComponent(appId)}`;
+      const lambdaUrl = `${effectiveLambdaUrl}?appId=${encodeURIComponent(appId)}`;
 
       const appRes = await fetch(lambdaUrl);
       if (!appRes.ok)
